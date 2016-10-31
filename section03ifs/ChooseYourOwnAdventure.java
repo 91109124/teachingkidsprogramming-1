@@ -43,20 +43,8 @@ public class ChooseYourOwnAdventure
     if (input == "toilet")
     {
     }
-    //            pourIntoToilet (recipe below) --#12.1
-    //            ------------- Recipe for pourIntoToilet --#12.2
-    MessageBox.showMessage("As you pour the ooze into the toilet it backs up, gurgles, and explodes, covering you in radioactive waste.");
-    //               Ask the user "Do you want to train to be a NINJA?  'Yes' or 'HECK YES'?" --#11
-    MessageBox
-    
-    //               If they answer "yes" --#13.1
-    //                    Tell the user "Awesome dude!  You live out the rest of your life fighting crimes and eating pizza!" --#14
-    //               Otherwise, if they answer "heck yes" --#13.2
-    //                    Tell the user "Awesome dude!  You live out the rest of your life fighting crimes and eating pizza!" --#15
-    //               Otherwise, if they answer anything else --#13.3
-    //                    endStory --#16
-    //            ------------- End of pourIntoToilet recipe --#12.3
-    else if (input == "backyard")
+    pourIntoToilet();
+    if (input == "backyard")
     {
     }
     //            pourIntoBackyard (recipe below) --#19.1
@@ -70,10 +58,28 @@ public class ChooseYourOwnAdventure
     //                Otherwise, if they answer anything else --#20.3
     //                    endStory --#23
     //         ------------- End of pourIntoBackyard recipe --#19.3
-    else {
-      
-    System.exit(0);
+    else
+    {
+      System.exit(0);
     }
+  }
+  private static void pourIntoToilet()
+  {
+    MessageBox.showMessage(
+        "As you pour the ooze into the toilet it backs up, gurgles, and explodes, covering you in radioactive waste.");
+    MessageBox.askForTextInput("Do you want to train to be a NINJA? 'Yes' or 'HECK YES'?");
+    //               If they answer "yes" --#13.1
+    if (input == "yes")
+    {
+    }
+    //                    Tell the user "Awesome dude!  You live out the rest of your life fighting crimes and eating pizza!" --#14
+    //               Otherwise, if they answer "heck yes" --#13.2
+    if (input == "heck yes")
+    {
+    }
+    //                    Tell the user "Awesome dude!  You live out the rest of your life fighting crimes and eating pizza!" --#15
+    //               Otherwise, if they answer anything else --#13.3
+    //                    endStory --#16
   }
   private static void wakeUp()
   {
